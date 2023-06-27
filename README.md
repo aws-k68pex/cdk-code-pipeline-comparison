@@ -1,6 +1,6 @@
 # cdk-code-pipeline-comparison
 
-### CDK v1:
+### CDK v1 (AWS CDK v1 has reached End-of-Support on 2023-06-01):
 There are three different cdk construct for CodePipeline:
 1. [@aws-cdk/aws-codepipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/aws-codepipeline-readme.html) module:
 Typescript: `@aws-cdk/aws-codepipeline`
