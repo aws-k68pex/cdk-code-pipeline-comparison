@@ -31,7 +31,16 @@ repository: repo,
 
 2. [@aws-cdk/pipelines](https://docs.aws.amazon.com/cdk/api/v1/docs/pipelines-readme.html) module:
   - class [CdkPipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_pipelines.CdkPipeline.html) (construct)
-    + Typescript: `@aws-cdk/pipelines » CdkPipeline`  
+    + Typescript: `@aws-cdk/pipelines » CdkPipeline`
+**Description**:
+* Old API
+* Defines an AWS CodePipeline-based Pipeline to deploy CDK applications
+* Automatically manages the following:
+  - Stack dependency order
+  - Asset publishing
+  - Keeping the pipeline up-to-date as the CDK apps change
+  - Using stack outputs later on in the pipeline
+
 **Example**:
 ```
 // Original API
@@ -42,7 +51,10 @@ const originalPipeline = new pipelines.CdkPipeline(this, 'Pipeline', {
 });
 ```
   - class [CodePipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_pipelines.CodePipeline.html) (construct)
-    + Typescript: `@aws-cdk/pipelines » CodePipeline`  
+    + Typescript: `@aws-cdk/pipelines » CodePipeline`
+**Description**:
+- Modern API
+
 **Example**:
 ```
 // Modern API
