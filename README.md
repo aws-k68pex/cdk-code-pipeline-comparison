@@ -5,6 +5,7 @@ There are three different cdk construct for CodePipeline:
 1. [@aws-cdk/aws-codepipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/aws-codepipeline-readme.html) module:
 Typescript: `@aws-cdk/aws-codepipeline`
   - class [Pipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-codepipeline.Pipeline.html) (construct)
+
 **Description**: An AWS CodePipeline pipeline with its associated IAM role and S3 bucket.  
 
 **Example**:
@@ -31,7 +32,8 @@ repository: repo,
 
 2. [@aws-cdk/pipelines](https://docs.aws.amazon.com/cdk/api/v1/docs/pipelines-readme.html) module:
   - class [CdkPipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_pipelines.CdkPipeline.html) (construct)
-    + Typescript: `@aws-cdk/pipelines » CdkPipeline`
+    + Typescript: `@aws-cdk/pipelines » CdkPipeline`  
+
 **Description**:
 * Old API
 * Defines an AWS CodePipeline-based Pipeline to deploy CDK applications
@@ -51,7 +53,8 @@ const originalPipeline = new pipelines.CdkPipeline(this, 'Pipeline', {
 });
 ```
   - class [CodePipeline](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_pipelines.CodePipeline.html) (construct)
-    + Typescript: `@aws-cdk/pipelines » CodePipeline`
+    + Typescript: `@aws-cdk/pipelines » CodePipeline`  
+
 **Description**:
 - Modern API
 
@@ -77,7 +80,9 @@ const modernPipeline = new pipelines.CodePipeline(this, 'Pipeline', {
 
 1. class [Pipeline](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_codepipeline.Pipeline.html) (construct)
   - Typescript: `aws-cdk-lib » aws_codepipeline » Pipeline`  
+
 **Description**: An AWS CodePipeline pipeline with its associated IAM role and S3 bucket.  
+
 **Example**:  
 ```
 // create a pipeline
@@ -102,6 +107,7 @@ sourceStage.addAction(new codepipeline_actions.CodeCommitSourceAction({
 
 2. class [CodePipeline](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines.CodePipeline.html) (construct)
  - Typescript: `aws-cdk-lib » pipelines » CodePipeline`  
+
 **Description**: This is a `Pipeline` with its `engine` property set to `CodePipelineEngine`, and exists for nicer ergonomics for users that don't need to switch out engines.  
 
 **Example**:  
