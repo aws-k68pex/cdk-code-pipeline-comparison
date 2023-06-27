@@ -1,4 +1,4 @@
-# AWS CDK: Pipeline Comparisons
+# AWS CDK: Pipeline Comparison
 
 ### CDK v1 (AWS CDK v1 has reached End-of-Support on 2023-06-01):
 There are three different cdk construct for CodePipeline:
